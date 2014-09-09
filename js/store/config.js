@@ -1,0 +1,5 @@
+define({
+	DEBUG : true,
+	USER_INDEX : "0d6434d3-f4fb-4765-8b5e-92807ff27c19",
+	APPLICATION_INDEX : "0d6434d3-f4fb-4765-8b5e-92807ff27c20"
+});

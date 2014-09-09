@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+        
+		<link rel="shortcut icon" sizes="196x196" href="img/logo-196.png"/>
+		<link rel="shortcut icon" sizes="128x128" href="img/logo-128.png"/>
+		<link rel="apple-touch-icon" sizes="196x196" href="img/logo-196.png"/>
+		<link rel="apple-touch-icon" sizes="128x128" href="img/logo-128.png"/>
+		
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.0.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/conno-ios-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobile-layout.css" />
+        <title>SAAQ Kiosk</title>
+    </head>
+    <body>
+    	
+    	<div id="splashscreen">
+		    <img src="img/genesys-logo.png"/>
+		</div>
+
+		<!-- **** START MAIN PAGE **** -->
+		<div id="main-page" data-role="page" data-fullscreen="true">
+			<!-- **** HEADER **** -->
+			<div data-role="header" data-position="fixed" data-id="common-header" data-tap-toggle="false">
+				<h1 style="padding:0px"><img height="70" style="padding:5px" src="img/saaq-logo.png"/></h1>
+			</div>
+			
+			<div data-role="content">
+				<!-- START: MAIN PAGE -->
+				<div style="padding:5px; text-align:center; margin-bottom:10px">
+					<h2>Bienvenue à la SAAQ | Welcome to SAAQ</h2>
+					<h3>S'il vous plaît choisir parmi les options suivantes</h3>
+					<h3>Please select from one of the following options</h3>
+				</div>
+
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<p>Pour commencer s'il vous plaît sélectionner la langue que vous souhaitez utiliser</p>
+				</div>
+				
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a id="btnOptions" href="#frPage2" data-role="button" data-theme="e" data-plan="a">Fran&ccedil;ais</a>
+				</div>
+				
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<p>To get started please select the language you would like to use</p>
+				</div>
+				
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a id="btnOptions" href="#enPage2" data-role="button" data-theme="b" data-plan="a">English</a>
+				</div>
+				
+				<!-- END: MAIN PAGE -->
+			</div>
+
+			<div data-role="footer" data-id="common-footer" data-position="fixed">
+				<center><img class="ui-center-logo" src="images/genesys-logo.png"/></center>
+			</div>
+		</div>
+		<!-- **** END MAIN PAGE **** -->
+		
+
+
+
+
+		<!-- **** START ENGLISH **** -->
+		<div id="enPage2" data-role="page" data-fullscreen="true">
+			<!-- **** HEADER **** -->
+			<div data-role="header" data-position="fixed" data-id="common-header" data-tap-toggle="false">
+				<a class="btnBack" href="#main-page" style="margin-top:15px; margin-left:20px" data-role="button" data-theme="b" data-plan="a">Back</a>
+				<h1 style="padding:0px"><img height="70" style="padding:5px" src="img/saaq-logo.png"/></h1>
+			</div>
+			
+			<div data-role="content">
+				<!-- START: REQUEST BLOCK -->
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<h3>Driver's Licence Fee Payment and Renewal</h3>
+					<p>A driver's licence is issued for a period of four years. However, you must pay the fees and insurance contribution every year to keep your driving privilege.</p>
+				</div>
+
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a class="btnEnTask" data-role="button" data-theme="b" data-plan="a" data-url="http://www.saaq.gouv.qc.ca/en/driver_licence/renewal/index.php" data-task="Renew License">Renew License</a>
+				</div>
+				<!-- END: REQUEST BLOCK -->
+
+
+				<!-- START: REQUEST BLOCK -->
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<h3>Appointment for a Driving Test</h3>
+					<p>Make or check a booking right here at the kiosk</p>
+				</div>
+
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a class="btnEnTask" data-role="button" data-theme="b" data-plan="a" data-url="http://www.saaq.gouv.qc.ca/infuseur/phplib/dispo_service_v2.php?UID=Grv_Net&Destination=https://services.saaq.gouv.qc.ca/FonctionsWeb/RendezVous.Web/Utl.Web/PagesCommunes/UtlAdAiguilleur.aspx%3FCodeOpert=GRV02%26langue=en%26taille-texte=petite&Arret=/saaqclic/en/public/message/banquecsr.php&Entretien=/saaqclic/en/public/message/entretien.php&Panne=/saaqclic/en/public/message/panne.php&Langue=EN&Erreur=/saaqclic/en/public/message/message.html" data-task="Appointment">Appointment</a>
+				</div>
+				<!-- END: REQUEST BLOCK -->
+
+
+				<!-- START: REQUEST BLOCK -->
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<h3>Change of Address</h3>
+					<p>If you are moving to a new address, government departments must be notified of your change of address</p>
+				</div>
+
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a class="btnEnTask" data-role="button" data-theme="b" data-plan="a" data-url="http://www.saaq.gouv.qc.ca/en/miscellany/moving/index.php" data-task="Change Address">Change Address</a>
+				</div>
+				<!-- END: REQUEST BLOCK -->
+
+				<!--	<div class="ui-block-a" style="padding:5px; width:100%; margin-top:50px">
+					<label for="statusMessage">Status</label>
+					<input type="text" id="statusMessage" placeholder="Status message" />
+				</div> -->
+			</div>
+
+			<div data-role="footer" data-id="common-footer" data-position="fixed">
+				<center><img class="ui-center-logo" src="images/genesys-logo.png"/></center>
+			</div>
+
+			<div data-role="popup" id="enNewInteraction" data-theme="a" class="ui-corner-all" data-overlay-theme="b">
+			    <form>
+			        <div style="padding:10px 20px;">
+			            <h3>Please enter your name and license number</h3>
+			            <label for="firstname" class="ui-hidden-accessible">First Name</label>
+			            <input type="text" name="user" id="firstname" value="" placeholder="Gordon Sexton" data-theme="a">
+			            <label for="licenseno" class="ui-hidden-accessible">License Number</label>
+			            <input type="text" name="user" id="licenseno" value="" placeholder="ABC123" data-theme="a">
+			            <a data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check btnEnSubmit">Continue</a>
+			        </div>
+			    </form>
+			</div>
+
+			<div data-role="popup" id="enConfirmTicket" data-theme="a" class="ui-corner-all" data-overlay-theme="b">
+			    <form>
+			        <div style="padding:10px 20px;">
+			            <h3>Ticket Number</h3>
+			            <p>Please take a seat. We will call your in just moment</p>
+			            <label for="ticket" class="ui-hidden-accessible">Ticket Number</label>
+			            <input type="text" name="user" id="ticket" value="" placeholder="Ticket Number" data-theme="a">
+			            <a href="#main-page" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check btnComplete">Finish</a>
+			        </div>
+			    </form>
+			</div>
+
+		</div>
+		<!-- **** END ENGLISH **** -->
+
+
+
+
+		<!-- **** START FRENCH **** -->
+		<div id="frPage2" data-role="page" data-fullscreen="true">
+			<!-- **** HEADER **** -->
+			<div data-role="header" data-position="fixed" data-id="common-header" data-tap-toggle="false">
+				<a href="#main-page" style="margin-top:15px; margin-left:20px" data-role="button" data-theme="b" data-plan="a">Back</a>
+				<h1 style="padding:0px"><img height="70" style="padding:5px" src="img/saaq-logo.png"/></h1>
+			</div>
+			
+			<div data-role="content">
+				<!-- START: REQUEST BLOCK -->
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<h3>Droits de licence Paiement et renouvellement de conduire</h3>
+					<p>Le permis de conduire est délivré pour une période de quatre ans. Cependant, vous devez payer les frais et la contribution d'assurance chaque année pour maintenir votre privilège de conduire.</p>
+				</div>
+
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a class="btnFrTask" data-role="button" data-theme="e" data-plan="a" data-url="http://www.saaq.gouv.qc.ca/permis/renouvellement/index.php" data-task="Renew License">Renouveler une licence</a>
+				</div>
+				<!-- END: REQUEST BLOCK -->
+
+
+				<!-- START: REQUEST BLOCK -->
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<h3>Rendez-vous pour un examen de conduite</h3>
+					<p>Faire ou vérifier une réservation ici au kiosque</p>
+				</div>
+
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a class="btnFrTask" data-role="button" data-theme="e" data-plan="a" data-url="http://www.saaq.gouv.qc.ca/infuseur/phplib/dispo_service_v2.php?UID=Grv_Net&Destination=https://services.saaq.gouv.qc.ca/FonctionsWeb/RendezVous.Web/Utl.Web/PagesCommunes/UtlAdAiguilleur.aspx%3FCodeOpert=GRV02%26langue=fr%26taille-texte=petite&Arret=/saaqclic/grandpublic/message/banquecsr.php&Entretien=/saaqclic/grandpublic/message/entretien.php&Panne=/saaqclic/grandpublic/message/panne.php&Langue=FR&Erreur=/saaqclic/grandpublic/message/message.html" data-task="Appointment">Rendez-vous</a>
+				</div>
+				<!-- END: REQUEST BLOCK -->
+
+
+				<!-- START: REQUEST BLOCK -->
+				<div class="ui-block-a" style="padding:5px; width:60%">
+					<h3>Changement d'adresse</h3>
+					<p>Si vous déménagez à une nouvelle adresse, les ministères doivent être informés de votre changement d'adresse</p>
+				</div>
+
+				<div class="ui-block-b" style="padding:5px; width:40%">
+					<a class="btnFrTask" data-role="button" data-theme="e" data-plan="a" data-url="http://www.saaq.gouv.qc.ca/envrac/demenagement/index.php" data-task="Change Address">Changement d'adresse</a>
+				</div>
+				<!-- END: REQUEST BLOCK -->
+
+				<!--	<div class="ui-block-a" style="padding:5px; width:100%; margin-top:50px">
+					<label for="statusMessage">Status</label>
+					<input type="text" id="statusMessage" placeholder="Status message" />
+				</div> -->
+			</div>
+
+			<div data-role="footer" data-id="common-footer" data-position="fixed">
+				<center><img class="ui-center-logo" src="images/genesys-logo.png"/></center>
+			</div>
+
+			<div data-role="popup" id="frNewInteraction" data-theme="a" class="ui-corner-all" data-overlay-theme="b">
+			    <form>
+			        <div style="padding:10px 20px;">
+			            <h3>S'il vous plaît entrer votre nom et votre numéro de licence</h3>
+			            <label for="firstname" class="ui-hidden-accessible">Prénom</label>
+			            <input type="text" name="user" id="firstname" value="" placeholder="Gordon Sexton" data-theme="a">
+			            <label for="licenseno" class="ui-hidden-accessible">Numéro de licence</label>
+			            <input type="text" name="user" id="licenseno" value="" placeholder="ABC123" data-theme="a">
+			            <a data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check btnFrSubmit">Continuer</a>
+			        </div>
+			    </form>
+			</div>
+
+			<div data-role="popup" id="frConfirmTicket" data-theme="a" class="ui-corner-all" data-overlay-theme="b">
+			    <form>
+			        <div style="padding:10px 20px;">
+			            <h3>Nombre de billets</h3>
+			            <p>S'il vous plaît prendre un siège. Nous allons appeler votre en seulement instant</p>
+			            <label for="ticket" class="ui-hidden-accessible">Nombre de billets</label>
+			            <input type="text" name="user" id="ticket" value="" placeholder="Ticket Number" data-theme="a">
+			            <a href="#main-page" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check btnComplete">Terminer</a>
+			        </div>
+			    </form>
+			</div>
+
+		</div>
+		<!-- **** END FRENCH **** -->
+		
+		
+		
+        <script type="text/javascript" src="js/lib/require.js" data-main="js/boot.lite.kiosk"></script>
+        
+    </body>
+</html>
